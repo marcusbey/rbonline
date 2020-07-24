@@ -26,6 +26,8 @@ SECRET_KEY = '9e(722p0(p=rp1%um)6!k3$db5vc@wi@34jh3dkkc!=6ki2k$^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SECURE_SSL_REDIRECT = True
+
 ALLOWED_HOSTS = []
 
 
