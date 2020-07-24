@@ -1,0 +1,198 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+  <section id="more" class="{{ mode }}">
+    <!-- About Section -->
+    <header class="about-header">
+      <div class="header-cover frame"></div>
+      <h1 class="leading">life as a <br>continuous <br>challenge </h1>
+    </header>
+
+    <section id="intro">
+      <section class="about-body">
+        <div class="row ">
+          <div class="about-intro col-lg-6" >
+            <img class = "about-profile" src=" {% static 'img/about-profile2.jpg' %} ">
+            <p class="about note black background">
+              <span class="p-start">G</span>oing from architecture to sofware developpement have been a big shit. although i knew since my first year in architecture scholol that it was the right thing to do. having a vision in life is very important as well as working you ass of to make it happen.
+            </p>
+          </div>
+          <div class=" container about-pitch light col-lg-6">
+            <div class="pitch-line">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1" height="550" viewBox="0 0 1 1284">
+                <path class="line-path"  d="M821,55h1V1339h-1V55Z" transform="translate(-821 -55)"/>
+              </svg>
+
+            </div>
+            <div class="pitch-wrapper hide ">
+              <div class="pitch-cover frame"></div>
+              <div class="pitch-container">
+                <h3> Opportunity</h3>
+                <p>{% lorem 50 w random %}</p>
+                <h3> Solution</h3>
+                <p class="pitch-solution">{% lorem 60 w random %}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- work Section -->
+    <section id="work">
+      <section class="about-field inter-field1 software">
+        <div class="row">
+          <div class="field-nav col-lg-6 left">
+            <header class="leading-field">
+                <h1 class="field">Software <br>Ingineer</h1>
+            </header>
+            <div class="about-skills ">
+              <h2>Tools</h2>
+              <ul>
+                <li><i class="fab {{ mode }} fa-github"></i></li>
+                <li><i class="fab {{ mode }} fa-github"></i></li>
+                <li><i class="fab {{ mode }} fa-github"></i></li>
+                <li><i class="fab {{ mode }} fa-github"></i></li>
+              </ul>
+            </div>
+            <div>
+              <h5><a href="">links</a></h5>
+            </div>
+            <button class="hire">Hire me</button>
+          </div>
+
+          <div class="field-info col-lg-6 right">
+            <div class="field-info-left"></div>
+            <div class="d-container about-experience">
+              <h2>Experiences</h2>
+              <p class="">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a
+                type specimen book.
+
+                {% lorem 50 w random %}
+              </p>
+
+              <h2>Projects</h2>
+              <ul>
+                <li>projetct</li>
+                <li>projetct</li>
+                <li>projetct</li>
+                <li>projetct</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </section>
+
+
+
+    <!-- Soft Skills Section-->
+    <section id="softskills">
+      <div class="row inter-field2">
+        <div class="soft-wrapper">
+          <div class="soft-cards">
+            <h3>Designer</h3>
+            <h5><a href="#designer">Graphic design and Web Design</a></h5>
+            <p class="note ">
+              {% lorem 50 w random %}
+            </p>
+          </div>
+          <div class="soft-cards">
+            <h3><a href="#architecture">Architecte</a> </h3>
+            <h5>Designing building Building</h5>
+            <p class="note">
+              {% lorem 50 w random %}
+            </p>
+          </div>
+          <div class="soft-cards">
+            <h3><a href="#Life">Life Hacker</a> </h3>
+            <h5>Improvement and sharing culture</h5>
+            <p class="note">
+              {% lorem 50 w random %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <section id="signup" class="signup-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+              <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+              <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+              <form class="form-inline d-flex">
+                <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+                <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section bg-black">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                  <h4 class="text-uppercase m-0">Address</h4>
+                  <hr class="my-4">
+                  <div class="small text-black-50">Montreal</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-envelope text-primary mb-2"></i>
+                  <h4 class="text-uppercase m-0">Email</h4>
+                  <hr class="my-4">
+                  <div class="small text-black-50">
+                    <a href="#">hello@romainboboe.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-3 mb-md-0">
+              <div class="card py-4 h-100">
+                <div class="card-body text-center">
+                  <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                  <h4 class="text-uppercase m-0">Phone</h4>
+                  <hr class="my-4">
+                  <div class="small text-black-50">+33 665 253 266</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social d-flex justify-content-center">
+            <a class="mx-2" href="https://github.com/marcusbey" target="_blank"><i class="fab fa-github"></i>
+            <a class="mx-2" href="https://medium.com/@rboboe" target="_blank"><i class="fab fa-medium"></i>
+            <a class="mx-2" href="https://www.linkedin.com/in/romainboboe/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="mx-2" href="https://www.twitter.com/romainbey" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="mx-2" href="https://www.instagram.com/bey.marcus/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+{% endblock %}
+
+

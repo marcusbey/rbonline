@@ -1,0 +1,25 @@
+{% load static %}
+
+{% block content %}
+  <div id="travel_map"></div>
+
+  <script>
+    const mymap = L.map('travel_map').setView([45.5, -73.5833], 3);
+    const marker = L.marker([45.5, -73.5833]).addTo(mymap);
+    marker.bindPopup("<b>Hello world!</b><br>I'm in Montreal").openPopup();
+    L.tileLayer('https://api.mapbox.com/styles/v1/marcusbey/ckcthb4452sud1iqadzc3nzjh/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoibWFyY3VzYmV5IiwiYSI6ImNrYzFmOGRoeTFzYTkyem54NmlzaWN5eXkifQ.0l0annt45UB2YYrWijtFZg'
+    }).addTo(mymap);
+
+  </script>
+
+  </div>
+
+
+
+{% endblock %}

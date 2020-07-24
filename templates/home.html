@@ -1,0 +1,68 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- Header -->
+  <section id="mySidenav" class="sidenav hide">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id = "app" class="travel_list">
+    {% include 'travel_list.html' %}
+    </div>
+    <div id = "now">
+    {% include 'now.html' %}
+    </div>
+  </section>
+
+  <section  id="main"
+            class="masthead contact-section {{ mode }}"
+            style="
+            background:
+              linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 60%, rgba(22, 22, 22, 0.7) 90%, #161616 100%),
+              url({{ background_url }});
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;"
+            >
+    <div class="container home">
+      <div class="row d-flex ">
+        <div class="container-left col6 col-md-6 col-sm-12 col-xm-12">
+          <div class="p intro {{ mode }}">
+            <span class="master-letter">S</span><span class="hightlight {{ mode }}">olving problems and inspiring people is what i do. I'm passionnate about tree things: technology, architecture and nature... Oooh and  i love food! yeah we all do. <br/>
+            i
+            <ul id="occupations">
+              <li class="active default">design</li>
+              <li>draw</li>
+              <li>code</li>
+              <li>build</li>
+              <li>write</li>
+              <li>lead</li>
+            </ul>
+            and i'm still learning new stuffs.  <br/><br/>
+             <!-- <a href="{% url 'about' %}"> --> <strong>More coming soon</strong> <!-- </a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex">
+        <div class = "container-left social d-flex" >
+          <a class="mx-2" href="https://github.com/marcusbey" target="_blank"><i class="fab {{ mode }} fa-github"></i>
+          <a class="mx-2" href="https://medium.com/@rboboe" target="_blank"><i class="fab {{ mode }} fa-medium"></i>
+          <a class="mx-2" href="https://www.linkedin.com/in/romainboboe/" target="_blank"><i class="fab {{ mode }} fa-linkedin"></i></a>
+          <a class="mx-2" href="https://www.twitter.com/romainbey" target="_blank"><i class="fab {{ mode }} fa-twitter"></i></a>
+          <a class="mx-2" href="https://www.instagram.com/bey.marcus/" target="_blank"><i class="fab {{ mode }} fa-instagram"></i></a>
+          <a id="mail-link" class="mx-2 {{ mode }}" href=""> <i class="far {{ mode }} fa-envelope"></i></a>
+        </div>
+        <div onclick="openNav()" class="now container-right home-btn">
+          <div class=" {{ mode }} "> Now
+          </div>
+        </div>
+      </div>
+    </div>
+  </section >
+
+  <section class="hide">
+      <!-- {% include 'about.html' %} -->
+  </section>
+
+{% endblock %}
