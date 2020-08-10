@@ -21,8 +21,7 @@ def rand_background():
 def index(request):
   background = rand_background();
   mode = 'dark' if background[1] == 'd' else 'light';
-  title = "2omain 3030Ξ";
-  return render(request, 'index.html', {'title': title, 'mode' : mode });
+  return render(request, 'index.html', {'mode' : mode });
 
 def home(request):
   background = rand_background()
